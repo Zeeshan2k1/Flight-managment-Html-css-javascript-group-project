@@ -1,0 +1,10 @@
+Project Proposal Submission
+
+You all need to submit me a project proposal regarding web frontend design. You need to implement the project using HTML, CSS, JAVASCRIPT. It needs to be an interactive project. 
+This a group project and there must be 2-3 people within a project. You need to make your own group with your idea. However the project must be a management system of any kind, for example restaurant ordering system, hospital management system, etc. I need all of you to submit me the project proposal before Wednesday 9th December 2020.
+
+Project Title: Flight Management system, this is like a flight booking page in which user can book a flight and see the estimated fares and see the schedueled flight.
+
+Group Leader: Usman Motiwala               Signature: usman saeed motiwala-cs201157
+Team Member: Abdul Rahman		   Signature: abdul rahman-cs201166
+Team Member: Zeeshan Ahmed 		   Signature: zeeshan ahmed-cs201163

@@ -1,0 +1,234 @@
+body{
+    margin:0;
+	background-color:#a6cce8;
+	}
+	
+nav{
+    margin:0px;
+    padding:0px;
+    background-color:#1C1A1B;
+    width:100%;
+    height:100px;
+	}
+	
+nav div{
+    margin:0;
+    padding:0;
+    }
+    nav ul{
+    float:right;
+    margin-top:35px;
+    }
+    nav ul li{
+    padding:5px;
+    display:inline-block;
+    }
+    nav ul li a{
+    text-decoration:none;
+    font-size:large;
+    color:#00809A;
+    padding:5px;
+    border:2px solid transparent
+    }
+    
+    li a:hover{
+    background-color:#a6cce8;
+    color:#00809A;
+    transition:1s ease-out;
+    }
+
+	
+.booking-form-box
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #1C1A1B;
+	max-width: 350px;
+	border: 1px solid #000000;
+	margin: 10% auto 0;
+	
+}
+
+
+
+.radio-btn .btn
+{
+	margin: 20px 10px 20px 0;
+	box-shadow: none;
+}
+
+.radio-btn .btn::after
+{
+	content: '';
+	height: 15px;
+	width: 15px;
+	top: -2px;
+	left: -1px;
+	background-color: #fff;
+	position: relative;
+	display: inline-block;
+	border: 3px solid #fff;
+	visibility: visible;
+	border-radius: 50%;
+	 border:1px solid #ced4da;
+}
+
+.radio-btn .btn:checked::after
+{
+	content: '';
+	background-color: #00809A;
+	transition: 0,5s;
+}
+
+.radio-btn span
+{
+
+	color: #00809A;
+	margin-right: 5px;
+	font-size: large;
+}
+
+.booking-form
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 20px 20px;
+}
+
+.booking-form label
+{
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-size: large;
+	color: #00809A;
+}
+
+input::placeholder
+{
+	color: #fff !important;
+}
+
+.input-grp
+{
+	width: 151px;
+	display: inline-block;
+}
+
+.form-control
+{
+	font-size: 12px !important;
+	border-radius: 0 !important;
+	color: #fff !important;
+	background: transparent !important;
+	box-shadow: none !important;
+}
+
+
+
+.custom-select
+{
+	color: #fff;
+	font-size: 12px;
+	border: 1px solid #ced4da;
+	box-shadow: none;
+	border-radius: 0;
+	background: transparent;
+}
+
+.custom-select option
+{
+	color: #333;
+}
+
+label
+{
+	color: #fff;
+}
+input[type="number"]:valid{
+	outline: 2px solid green;
+}
+input[type="number"]:invalid{
+	outline: 2px solid red;
+}
+.flight
+{
+	width: 100px !important;
+	padding: 9px 0 !important;
+	font-size: 12px !important;
+	border: transparent !important;
+	background: #a6cce8 !important;
+	font-size: 15px !important;
+	border-radius: 20px !important;
+	width: 200% !important;
+}
+.flight a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.flight:hover
+{
+	background: #00809A !important;
+	color: #000 !important;
+	transition: 0.5s !important;
+}
+
+#Flight1{
+	padding:100px;
+	width:80%;
+	margin:auto;
+	display: none;
+	
+}
+
+#option1{
+	background-image: url(airsial.png);
+	background-repeat: no-repeat;
+	background-color:#00809A ;
+	flex-direction: column;
+	flex-wrap: wrap;
+	display:flex;
+	width: 500px;
+	height: 100px;
+	margin: 50px 0;
+}
+
+#option2{
+	background-image: url(pia.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color:#00809A ;
+	flex-direction: column;
+	flex-wrap: wrap;
+	display:flex;
+	width: 500px;
+	height: 100px;
+	margin: 50px 0;
+}
+#option3{
+	background-image: url(serene.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color:#00809A ;
+	flex-direction: column;
+	flex-wrap: wrap;
+	display:flex;
+	width: 500px;
+	height: 100px;
+	margin: 50px 0;
+}
+
+.price a{
+	text-decoration:none;
+	font-size:large;
+	color:#a6cce8;
+	padding:5px;
+	border:2px solid transparent
+	}
+.price a:hover{
+	background-color:#686868;
+	color:#a6cce8;
+	transition:1s ease-out;
+	}

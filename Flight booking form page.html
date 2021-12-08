@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="icon.ico" />
+	<title>Flyaway</title>
+	<link rel="stylesheet" type="text/css" href="Flight booking form page.css">
+
+	<script>
+		function valid() {
+		var number = document.getElementById("number").value;
+		var number2 = document.getElementById("number2").value;
+		var fromflight=document.f1.from.value;
+		var toflight=document.f1.to.value
+		if (number<0){
+		alert("Enter a valid Number");
+		}
+		
+		if (number2<0){
+		alert("Enter a valid Number");
+		}
+
+		if (number>0 && number2>=0 && fromflight=="Karachi" && toflight=="Islamabad")
+		{
+		location.replace("flight1.html")
+		}
+
+		if (number>0 && number2>=0 && fromflight=="Karachi" && toflight=="Dubai")
+		{
+		location.replace("flight2.html")
+		}
+	}
+	
+
+	</script>
+	
+</head>
+
+<body>
+	<nav>
+		<a href="main page.html"><img src="ologo1.png"  width=200px height=150px style="float:left; object-fit:contain; margin-left:40%;">
+		</a>
+		<div>
+		<ul>
+		
+		<li><a href="Flight booking form page.html"></i>Book a flight</a></li>
+		<li><a href="Privacy policy.html">Privacy policy</a></li>
+		<li><a href="tips and deals.html">Tips & Deals</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+		</div>
+		</nav>
+
+	<form id="demo" name="f1">
+	<div class="booking-form-box">
+	<div class="radio-btn">
+	<input type="radio" class="btn" name="check" checked="checked">
+	<span>Round trip</span>
+	<input type="radio" class="btn" name="check">
+	<span>One Way</span>
+	</div>
+	
+	
+	<div class="booking-form">
+	<label>Flying From</label>
+	<select name="from" class="custom-select">
+		<option value="Karachi">Karachi</option>
+		<option value="Islamabad">Islamabad</option>
+		<option value="Lahore">Lahore</option>
+		<option value="Dubai">Dubai</option>
+		<option value="Istanbul">Istanbul</option>
+		<option value="Jeddah">Jeddah</option>
+	</select>
+	
+	<br>
+	
+	<label>Flying To</label>
+	<select name="to" class="custom-select">
+		<option value="Islamabad">Islamabad</option>
+		<option value="Lahore">Lahore</option>
+		<option value="Dubai">Dubai</option>
+		<option value="Istanbul">Istanbul</option>
+		<option value="Jeddah">Jeddah</option>
+		<option value="Karachi">Karachi</option>
+	</select>
+	
+	<div class="input-grp">
+	<label>Departing</label>
+	<input type="date" class="form-control select-date">
+	</div>
+	
+	<div class="input-grp">
+	<label>Returning</label>
+	<input type="date" class="form-control select-date">
+	</div>
+	
+	<div class="input-grp">
+	<label>Adults</label>
+	<input type="number" min="1"  id="number" class="form-control" value="1">
+	</div>
+	
+	<div class="input-grp">
+	<label>Childern</label>
+	<input type="number" min="0" id="number2" class="form-control" value="0">
+	</div>
+	
+	<div class="input-grp">
+	<label>Travel Class</label>
+	<select class="custom-select">
+		<option value="1">Economy Class</option>
+		<option value="2">Business Class</option>
+	</select>
+	</div>
+	
+	<br>
+	
+	<div class="input-grp">
+	<button type="button" onclick="valid()"  class="btn btn-primary flight">Flights</button>
+	</div>
+	
+	</div>
+	</div>
+	
+	</form>
+
+	
+</body>
+
+</html>

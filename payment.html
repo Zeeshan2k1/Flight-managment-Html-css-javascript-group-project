@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="shortcut icon" href="icon.ico" />
+<title>Flyaway</title>
+<script>
+    function checkforblank(){
+        if(document.getElementById('e').value == "Select"){
+            alert('Please select payment option');
+            return false;
+        }
+      else if(document.getElementById('a').value == ""){
+            alert('Please input Card Holder Name');
+            return false;
+        }
+       else if(document.getElementById('b').value == ""){
+            alert('Please input Card Number');
+            return false;
+        }
+       else if(document.getElementById('c').value == ""){
+            alert('Please input Date');
+            return false;
+        }
+       else if(document.getElementById('d').value == ""){
+            alert('Please input CVV Code');
+            return false;
+        }
+       else if(document.getElementById('f').value == "Select"){
+            alert('Please Select Your Country');
+            return false;
+        }
+       else if(document.getElementById('g').value == ""){
+            alert('Please input your city name');
+            return false;
+        }
+        else{
+            location.replace("final.html");
+        }
+
+    }
+</script>
+</head>
+<body>
+    <nav>
+        <a href="main page.html"><img src="ologo1.png"  width=200px height=150px style="float:left; object-fit:contain; margin-left:40%;">
+        </a>
+        <div>
+        <ul>
+        
+        <li><a href="Flight booking form page.html"></i>Book a flight</a></li>
+        <li><a href="Privacy policy.html">Privacy policy</a></li>
+        <li><a href="tips and deals.html">Tips & Deals</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+        </nav>
+    
+   
+     <div class="a2">
+      </div>
+
+     <div id="pay">
+         <div class="a3">
+        <h1>Payment Information</h1>
+
+        <div class="a4">
+        </div>
+    </div>
+
+    <form name="check">
+    <p class="pa">Payment Option</p>
+
+    <select id="e" name="dropdown">
+        <option value="Select"selected>Select</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Debit Card">Debit Card</option>
+     </select>
+
+     <p class="pa">Card Holder Name</p>
+     <input id="a" type="text" name="Card" placeholder=" Card Holder Name" value="">
+
+    <p class="pa">Card Number</p>
+    <input id="b" type="text" name="Number" placeholder=" Card Number" value="">
+
+    <div class="b1">
+    <p class="pb">Expiry</p>
+    <input id="c" type="date">
+    </div>
+
+    <div class="b2">
+    <p class="pb">CVV Code</p>
+    <input id="d" type="number" placeholder=" CVV">
+    </div>
+
+    <div class="b1">
+        <p class="pb">Country</p>
+    <select id="f" name="dropdown">
+        <option value="Select"selected>Select</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Argentina">Argentina</option>
+        <option value="China">China</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="Greece">Greece</option>
+        <option value="Iran">Iran</option>
+        <option value="Italy">Italy</option>
+        <option value="Japan">Japan</option>
+        <option value="Kenya">Kenya</option>
+     </select>
+    </div>
+
+    <div class="b2">
+        <p class="pb">City</p>
+        <input id="g" type="text" placeholder=" Enter your city name">
+        </div>
+
+        <div class="b3">
+           <button class="c" onclick="checkforblank()" type="button">Click to Pay</button>
+       </div>
+    </form>
+
+       <div class="b4"> 
+       <div class="footer-col">
+        <h4 class="pd">follow us</h4>
+        <div class="social-linkss">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/LOGIN" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="b5">
+       <p class="pe">&copy; Flyaway,All rights reserved</p>
+    </div>
+     </div>
+    
+    
+</body>
+</html>

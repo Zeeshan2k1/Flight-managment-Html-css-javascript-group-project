@@ -1,0 +1,109 @@
+body{
+    margin:0;
+    background-color:#a6cce8;
+    }
+    nav{
+    
+    margin:0px;
+    padding:0px;
+    background-color:#1C1A1B;
+    width:100%;
+    height:100px;
+    }
+    nav div{
+        
+    margin:0;
+    padding:0;
+    }
+    nav ul{
+    float:right;
+    margin-top:35px;
+    }
+    nav ul li{
+    padding:5px;
+    display:inline-block;
+    }
+    nav ul li a{
+    text-decoration:none;
+    font-size:large;
+    color:#00809A;
+    padding:5px;
+    border:2px solid transparent
+    }
+    
+    nav ul li a.active{
+        background-color: #686868;
+        color:#a6cce8;
+    }
+    
+    li a:hover{
+    background-color:#a6cce8;
+    color:#00809A;
+    transition:1s ease-out;
+    }
+
+
+    #Flight1{
+        padding:100px;
+        width:80%;
+        margin:auto;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #option1{
+        background-image: url(em.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color:#00809A ;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display:flex;
+        width: 500px;
+        height: 100px;
+        margin: 50px 0;
+    }
+  
+    #option2{
+        background-image: url(flydubai.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color:#00809A ;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display:flex;
+        width: 500px;
+        height: 100px;
+        margin: 50px 0;
+    }
+    #option3{
+        background-image: url(pia.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color:#00809A ;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display:flex;
+        width: 500px;
+        height: 100px;
+        margin: 50px 0;
+    }
+
+    .price a{
+        text-decoration:none;
+        font-size:large;
+        color:#a6cce8;
+        padding:5px;
+        border:2px solid transparent
+        }
+    .price a:hover{
+        background-color:#686868;
+        color:#a6cce8;
+        transition:1s ease-out;
+        }
+    
+        

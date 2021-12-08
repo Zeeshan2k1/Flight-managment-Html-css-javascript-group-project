@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.ico" />
+    <title>Flyaway</title>
+    <link rel="stylesheet" href="Passport.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function checkforblank(){
+            if(document.getElementById('b').value == ""){
+                alert('Please Enter your First Name');
+                return false;
+            }
+           else if(document.getElementById('c').value == ""){
+                alert('Please Enter your Last Name');
+                return false;
+            }
+           else if(document.getElementById('a').value == ""){
+                alert('Please input your Date Of Birth');
+                return false;
+            }
+          else  if(document.getElementById('d').value == "Select"){
+                alert('Please Select Your Gender');
+                return false;
+            }
+            else if(document.getElementById('e').value == ""){
+                alert('Please Enter Your Passport Number');
+                return false;
+            }
+           else if(document.getElementById('f').value == ""){
+                alert('Please Enter Your Issuing Date');
+                return false;
+            }
+           else if(document.getElementById('g').value == ""){
+                alert('Please Enter Your Expiry Date');
+                return false;
+            }
+           else if(document.getElementById('h').value == ""){
+                alert('Please Enter Your Issuing Country');
+                return false;
+            }
+            else{
+                location.replace("payment.html")
+            }
+            
+            
+    
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="main page.html"><img src="ologo1.png"  width=200px height=150px style="float:left; object-fit:contain; margin-left:40%;">
+        </a>
+        <div>
+        <ul>
+        
+        <li><a href="Flight booking form page.html"></i>Book a flight</a></li>
+        <li><a href="Privacy policy.html">Privacy policy</a></li>
+        <li><a href="tips and deals.html">Tips & Deals</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+        </nav>
+
+
+    <div class="a2">
+    </div>
+  <div id="detail">
+   <div class="a3">
+      <h1>Passport Information</h1>
+                <div class="a4">
+                </div>
+            </div>
+            <form>
+            <div class="b2">
+                <p class="pb">First Name</p>
+                <input id="b" type="text" placeholder=" Enter your First name">
+                </div>
+                <div class="b2">
+                    <p class="pb">Midle Name</p>
+                    <input class="b" type="text" placeholder=" Enter your Middle name">
+                    </div>
+                    <div class="b2">
+                        <p class="pb">Last Name</p>
+                        <input id="c" type="text" placeholder=" Enter your Last name">
+                        </div>
+                        <div class="b2">
+                            <p class="pb">Date Of Birth</p>
+                            <input id="a" type="date">
+                            </div>
+                            <div class="b2">
+                                <p class="pb">Gender</p>
+                            <select id="d" name="dropdown">
+                                <option value="Select"selected>Select</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Custom">Other</option>
+                             </select>
+                            </div>
+                            <div class="b3">
+                            <p class="pa">Passport Number</p>
+                            <input id="e" type="text" placeholder=" Passport Number">
+                        </div>
+                        <div class="b2">
+                            <p class="pb">Issuing Date</p>
+                            <input id="f" type="date">
+                            </div>
+                            <div class="b2">
+                                <p class="pb">Expiry Date</p>
+                                <input id="g" type="date">
+                                </div>
+                                <div class="b3">
+                                    <p class="pa">Issuing Country</p>
+                                    <input id="h" type="text" placeholder=" Issuing Country">
+                                </div>
+                                <div class="b3">
+                                    <button class="c" type="button" onclick="checkforblank()">Click to Proceed</button>
+                                </div>
+                            </form>
+                                <div class="b3">
+                                 <div class="b5">
+                                    <p class="pe">&copy; Flyaway,All rights reserved</p>
+                                 </div>
+                                </div>
+        </div>
+    
+</body>
+</html>
